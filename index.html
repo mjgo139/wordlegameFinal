@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Proyecto</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <h1 id="tituloPrincipal">Adivina la Palabra...</h1>
+    <section id="contenedorGrilla" style="text-align: center;">
+        <!--Grilla de letras-->
+        <div class="lds-roller hidden"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </section>
+    <section class="main">
+        <h3>INDICACIONES:</h3>
+        <ul>
+            <li class="Verde indicaciones">Verde: La letra existe y está en la posición correcta.</li>
+            <li class="Amarillo indicaciones">Amarillo: La letra existe pero no está en la posición correcta.</li>
+            <li class="Rojo indicaciones">Rojo: La letra no existe en la palabra.</li>
+        </ul>
+    </section>
+    <h2 id="subTitulo"></h2>
+    <section class="main">
+        <div id="config">
+            <input type="number" name="numIntentos" id="numIntentos" placeholder="Ingrese el número de intentos.">
+            <br>
+            <button id="btnConf">Aplicar</button>
+        </div>
+        <div id="juego" class="hidden">
+            <input type="text" name="palabra" id="intento" placeholder="Ingrese la palabra.">
+            <br>
+            <button id="btnProbar">Probar</button>
+        </div>
+    </section>
+
+    <!--MODAL-->
+    <section class="modal ">
+        <div class="modal__container">
+            <h2 class="modal__title" id="tituloModal">¡Correcto!</h2>
+            <p class="modal__paragraph" id="mensajeModal"></p>
+            <a href="#" class="modal__close">Reiniciar</a>
+        </div>
+    </section>
+    <section id="contenedorTeclado" style="text-align: center;">
+        <!--Grilla de teclado-->
+    </section>
+    <footer>
+        Marcelo Gonzalez &copy;
+    </footer>
+</body>
+</html>
